@@ -7,6 +7,10 @@
          flex-direction: row;
         
     }
+    p{
+         color: white;
+         line-height: 1.6rem;
+    }
     
     &-item{
         display: flex;
@@ -16,9 +20,7 @@
         background-color: $veryDarkMagenta;
         margin: 1rem 1rem;
        
-        &:first-child{
-            margin: 1rem 0;
-        }
+        
         @include breakpoint-up('medium'){
             
             

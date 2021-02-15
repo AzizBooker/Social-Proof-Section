@@ -10,13 +10,15 @@ html {
   }
   body {
     margin: 1rem 1rem;
+    margin-bottom: 5rem;
     padding: 0;
     line-height: 1.3;
     font-family: "Public Sans", sans-serif;
     font-size: $font-md;
     color: $white;
     font-weight: 300;
-    min-height: 250vh;
+   
+
     overflow-x: hidden;
   
     @include breakpoint-up(large) {

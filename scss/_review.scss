@@ -7,6 +7,7 @@
     text-align: center;
     @include breakpoint-up('medium'){
         transform: translateX(-3rem);
+        width: 30%;
     }
 
     &-container{
@@ -19,14 +20,15 @@
         margin-bottom: 1.0625rem;
         padding: 0 16px;
         @include breakpoint-up('medium'){
+            
             &:first-child{
-                transform: translateX(-2rem);
+                transform: translateX(-4rem);
             }
             &:nth-child(2){
                 transform:translateX(2rem)
             }
             &:last-child{
-                transform: translateX(6rem);
+                transform: translateX(8rem);
             }
         }
         
