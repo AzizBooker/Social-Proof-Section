@@ -12,20 +12,29 @@
         &-heading{
             display: flex;
             justify-content: flex-start;
-            flex-direction: column;
+            align-items: center;
+            flex-direction: row;
             
+            .text{
+                margin-left: 1.5rem;
+            }
             .name{
                 margin: 0 0;
             }
+
+            
             h4{
                 color: $darkGrayishMagenta;
                 margin: 0 0;
                 padding-top: 0.2rem;
                 font-weight: 300;
             }
+            img{
+                border-radius: 10rem;
+            }
         }
         &-body{
-            margin-top: 2rem;
+            margin-top: 1.5rem;
         }
     }
 }

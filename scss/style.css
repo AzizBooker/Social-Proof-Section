@@ -242,10 +242,17 @@ h2 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.testimonials-item-heading .text {
+  margin-left: 1.5rem;
 }
 
 .testimonials-item-heading .name {
@@ -259,7 +266,11 @@ h2 {
   font-weight: 300;
 }
 
+.testimonials-item-heading img {
+  border-radius: 10rem;
+}
+
 .testimonials-item-body {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
