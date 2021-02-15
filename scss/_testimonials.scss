@@ -1,19 +1,47 @@
 .testimonials{
     display: flex;
     flex-direction: column;
+    margin: 0 0;;
+    @include breakpoint-up('medium'){
+        margin-top: 2rem;
+         flex-direction: row;
+        
+    }
     
     &-item{
         display: flex;
         flex-direction: column;
         padding: 1.9375rem 2.6875rem;
-        border-radius: .6rem;
+        border-radius: .9rem;
         background-color: $veryDarkMagenta;
         margin: 1rem 1rem;
+       
+        &:first-child{
+            margin: 1rem 0;
+        }
+        @include breakpoint-up('medium'){
+            
+            
+        &:nth-child(2){
+
+            transform: translateY(2rem);
+        }
+        &:last-child{
+            transform: translateY(4rem);
+        }
+    }
+       
+       
         &-heading{
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-direction: row;
+            @include breakpoint-down('xSmall'){
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
             
             .text{
                 margin-left: 1.5rem;
@@ -35,6 +63,10 @@
         }
         &-body{
             margin-top: 1.5rem;
+            
+            @include breakpoint-down('xSmall'){
+                text-align: center;
+            }
         }
     }
 }

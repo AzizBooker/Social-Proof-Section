@@ -2,14 +2,34 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     color:$veryDarkMagenta ;
     text-align: center;
+    @include breakpoint-up('medium'){
+        transform: translateX(-3rem);
+    }
 
     &-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background: $lightGrayishMagenta;
         border-radius: .5rem;
         margin-top: 1.0625rem;
         margin-bottom: 1.0625rem;
+        padding: 0 16px;
+        @include breakpoint-up('medium'){
+            &:first-child{
+                transform: translateX(-2rem);
+            }
+            &:nth-child(2){
+                transform:translateX(2rem)
+            }
+            &:last-child{
+                transform: translateX(6rem);
+            }
+        }
+        
         &-stars{
             padding-top: .4rem;
         }

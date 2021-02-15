@@ -3,4 +3,11 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin: 0 0;
+   
+    @include breakpoint-up('medium'){
+        text-align: left;
+        font-size: $font-lg;
+        margin-right: 5rem;
+    }
 }
