@@ -1,0 +1,31 @@
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    
+    &-item{
+        display: flex;
+        flex-direction: column;
+        padding: 1.9375rem 2.6875rem;
+        border-radius: .6rem;
+        background-color: $veryDarkMagenta;
+        margin: 1rem 1rem;
+        &-heading{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            
+            .name{
+                margin: 0 0;
+            }
+            h4{
+                color: $darkGrayishMagenta;
+                margin: 0 0;
+                padding-top: 0.2rem;
+                font-weight: 300;
+            }
+        }
+        &-body{
+            margin-top: 2rem;
+        }
+    }
+}

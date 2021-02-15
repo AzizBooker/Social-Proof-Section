@@ -1,0 +1,17 @@
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:$veryDarkMagenta ;
+    text-align: center;
+
+    &-container{
+        background: $lightGrayishMagenta;
+        border-radius: .5rem;
+        margin-top: 1.0625rem;
+        margin-bottom: 1.0625rem;
+        &-stars{
+            padding-top: .4rem;
+        }
+    }
+}
